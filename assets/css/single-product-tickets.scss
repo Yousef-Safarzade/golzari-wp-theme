@@ -1,0 +1,561 @@
+#primary{
+
+  .woocommerce-breadcrumb{display: none}
+
+  margin: 100px auto;
+
+  max-width: 1044px;
+
+  .product{
+
+    width: 100%;
+    display: flex;
+    gap: 50px;
+
+    .thumbnail-container{
+
+      max-width: 360px;
+      overflow: hidden;
+
+      img{
+        border-radius: 24px;
+      }
+
+    }
+
+    .content-container{
+
+
+      .ticket-title {
+
+        display: flex;
+        align-items: center;
+
+
+
+      }
+
+      h1{
+        margin:0;
+        font:var(--golzari-typography-h2);
+        font-family: var(--golzari-pinar-font );
+      }
+
+
+      .ticket-meta-container {
+
+        display: flex;
+
+        gap: 24px;
+
+        margin-top: 32px;
+
+        .meta-data-item{
+
+          min-width: 158px;
+
+          .meta-title-container{
+
+            display: flex;
+
+            gap: 5px;
+
+            .meta-title-icon{
+
+              display: flex;
+
+              align-items: center;
+
+              svg{
+
+                width: 16px;
+                height: 16px;
+
+              }
+
+            }
+
+            .meta-title-text {
+
+              font: var(--golzari-typography-body-medium);
+
+            }
+
+          }
+
+
+          .meta-value-container{
+
+            font: var(--golzari-typography-body-medium);
+            color: var(--golzari-netural-400);
+            word-spacing: 5px;
+
+
+          }
+
+
+        }
+
+      }
+
+
+
+      .ticket-seats-data-container {
+
+        display: flex;
+        gap: 10px;
+        margin-right: auto;
+
+        .tickets-seats{
+
+          display: flex;
+          background: var(--golzari-accent-color-light);;
+          color: var(--golzari-accent-color);
+          border-radius: 20px;
+          min-width: 87px;
+          height: 30px;
+          align-items: center;
+          justify-content: center;
+          font:var(--golzari-typography-body-small);
+
+        }
+
+        .tickets-remaining-seats{
+
+          font:var(--golzari-typography-body-small);
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+        }
+
+      }
+
+
+      .description-container{
+
+
+        margin-top : 32px;
+
+        .description-title{
+
+          font:var(--golzari-typography-h4);
+
+        }
+
+        .ticket-description{
+
+          font:var(--golzari-typography-body-medium);
+
+          color:var(--golzari-netural-400);
+
+        }
+
+      }
+
+
+
+
+
+      .ticket-location-container{
+
+        margin-top : 32px;
+
+
+        .location-title{
+
+          font:var(--golzari-typography-h4);
+
+        }
+
+        .location-map-container{
+
+          width: 100%;
+
+          height: 200px;
+
+          border-radius: 15px;
+
+          overflow: hidden;
+
+          iframe{
+
+            border: none;
+
+            border-radius: 15px;
+
+            min-height: 200px;
+
+            width: 100%;
+
+          }
+
+        }
+
+      }
+
+
+
+      .purchase-button-wrap {
+
+
+        display: flex;
+        gap: 12px;
+        margin-top: 24px;
+
+        .purchase-button-container {
+          width: 100%;
+          height: 52px;
+          background: var(--golzari-accent-color);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--golzari-netural-50);
+          cursor: pointer;
+          text-decoration: none;
+          gap: 10px;
+          transition: all 0.2s linear;
+
+          &:hover {
+            background: var(--golzari-accent-color-dark);
+          }
+
+          &.disabled {
+
+            pointer-events: none;
+
+            background: var(--golzari-accent-color-mid);
+
+            svg {
+
+              path {
+
+                fill: transparent !important;
+
+                stroke: var(--golzari-netural-50);
+
+              }
+
+            }
+
+          }
+
+
+          &.disabled.coming-soon {
+
+
+            background: var(--golzari-accent-color-light);
+
+            svg {
+
+              path {
+
+                fill: var(--golzari-netural-50) !important;
+
+              }
+
+            }
+
+          }
+
+
+
+
+
+
+
+
+
+          .purchase-icon {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+              width: 20px;
+              height: 20px;
+
+              path {
+                fill: var(--golzari-netural-50);
+              }
+            }
+
+          }
+
+          .purchase-text {
+
+            font:var(--golzari-typography-button-medium);
+
+            .ready-step{
+              display: none;
+            }
+
+          }
+
+        }
+
+
+        .quantity {
+
+          display: none;
+
+        }
+
+
+        &.ready-purchase {
+
+
+          .quantity { display: flex; }
+
+          .ready-step{ display: flex !important; }
+
+          .first-step{ display: none;}
+
+        }
+
+
+
+
+        &.doing-ajax{
+          pointer-events: none;
+          opacity: 0.5;
+        }
+
+      }
+
+
+      #error-wrap {
+        margin-top: 24px;
+        font:var(--golzari-typography-body-medium);
+        flex-direction: column;
+        gap: 12px;
+        line-height: 1.5em;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+        padding-top: 10px;
+        display: none;
+
+        a.button.wc-forward {
+          width: 100%;
+          height: 52px;
+          background: var(--golzari-accent-color);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--golzari-netural-50);
+          cursor: pointer;
+          text-decoration: none;
+          gap: 10px;
+          transition: all .2s linear;
+          margin-top: 10px;
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+}
+
+
+
+/* ===========================
+   Small phones
+   =========================== */
+
+@media (max-width: 576px) {
+
+
+  #primary{
+
+      margin: 20px auto;
+      max-width: 1044px;
+
+
+    .product{
+      width: 95%;
+      margin: 20px auto;
+      flex-direction: column;
+      gap: 20px;
+
+      .thumbnail-container {
+        height: auto;
+      }
+
+
+      .content-container{
+
+        .ticket-title {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+        }
+
+
+        .ticket-seats-data-container {
+          display: flex;
+          gap: 10px;
+          margin-right: 0;
+        }
+
+
+        .ticket-meta-container {
+          gap: 30px;
+          margin-top: 32px;
+          flex-direction: column;
+        }
+
+
+
+      }
+
+
+    }
+
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* ===========================
+   Large phones
+   =========================== */
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+
+  #primary{
+
+    margin: 20px auto;
+    max-width: 1044px;
+
+
+    .product{
+      width: 95%;
+      margin: 20px auto;
+      flex-direction: column;
+      gap: 20px;
+
+      .thumbnail-container {
+        height: auto;
+      }
+
+
+      .content-container{
+
+        .ticket-title {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+        }
+
+
+        .ticket-seats-data-container {
+          display: flex;
+          gap: 10px;
+          margin-right: 0;
+        }
+
+
+        .ticket-meta-container {
+          gap: 30px;
+          margin-top: 32px;
+          flex-direction: column;
+        }
+
+
+
+      }
+
+
+    }
+
+  }
+
+}
+
+
+
+/* ===========================
+   Tablets
+   =========================== */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  #primary{
+
+    margin: 20px auto;
+    max-width: 1044px;
+
+
+    .product{
+      width: 95%;
+      margin: 20px auto;
+      flex-direction: column;
+      gap: 20px;
+
+      .thumbnail-container {
+        height: auto;
+      }
+
+
+      .content-container{
+
+        .ticket-title {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+        }
+
+
+        .ticket-seats-data-container {
+          display: flex;
+          gap: 10px;
+          margin-right: 0;
+        }
+
+
+        .ticket-meta-container {
+          gap: 30px;
+          margin-top: 32px;
+          flex-direction: column;
+        }
+
+
+
+      }
+
+
+    }
+
+  }
+
+
+}
+
+
+
+/* ===========================
+   Laptops
+   =========================== */
+
+@media (min-width: 992px) {
+
+
+}

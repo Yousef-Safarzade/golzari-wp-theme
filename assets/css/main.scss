@@ -1,0 +1,1834 @@
+@use 'styleGuide';
+@use 'mixins';
+
+
+
+/* ==========================================
+   Layout
+========================================== */
+
+.golzari-container-width {
+  max-width: var(--golzari-container-width) !important;
+}
+
+
+/* ==========================================
+   Colors
+========================================== */
+
+.golzari-accent-color {
+  color: var(--golzari-accent-color);
+}
+
+.golzari-accent-color-dark {
+  color: var(--golzari-accent-color-dark);
+}
+
+.golzari-accent-color-mid {
+  color: var(--golzari-accent-color-mid);
+}
+
+.golzari-accent-color-light {
+  color: var(--golzari-accent-color-light);
+}
+
+.golzari-accent-color-subtle {
+  color: var(--golzari-accent-color-subtle);
+}
+
+.golzari-neutral-700 {
+  color: var(--golzari-netural-700);
+}
+
+.golzari-neutral-600 {
+  color: var(--golzari-netural-600);
+}
+
+.golzari-neutral-500 {
+  color: var(--golzari-netural-500);
+}
+
+.golzari-neutral-400 {
+  color: var(--golzari-netural-400);
+}
+
+.golzari-neutral-300 {
+  color: var(--golzari-netural-300);
+}
+
+.golzari-neutral-200 {
+  color: var(--golzari-netural-200);
+}
+
+.golzari-neutral-100 {
+  color: var(--golzari-netural-100);
+}
+
+.golzari-neutral-50 {
+  color: var(--golzari-netural-50);
+}
+
+
+/* ==========================================
+   Background Colors
+========================================== */
+
+.golzari-bg-accent {
+  background-color: var(--golzari-accent-color);
+}
+
+.golzari-bg-accent-dark {
+  background-color: var(--golzari-accent-color-dark);
+}
+
+.golzari-bg-accent-mid {
+  background-color: var(--golzari-accent-color-mid);
+}
+
+.golzari-bg-accent-light {
+  background-color: var(--golzari-accent-color-light);
+}
+
+.golzari-bg-accent-subtle {
+  background-color: var(--golzari-accent-color-subtle);
+}
+
+.golzari-bg-neutral-700 {
+  background-color: var(--golzari-netural-700);
+}
+
+.golzari-bg-neutral-600 {
+  background-color: var(--golzari-netural-600);
+}
+
+.golzari-bg-neutral-500 {
+  background-color: var(--golzari-netural-500);
+}
+
+.golzari-bg-neutral-400 {
+  background-color: var(--golzari-netural-400);
+}
+
+.golzari-bg-neutral-300 {
+  background-color: var(--golzari-netural-300);
+}
+
+.golzari-bg-neutral-200 {
+  background-color: var(--golzari-netural-200);
+}
+
+.golzari-bg-neutral-100 {
+  background-color: var(--golzari-netural-100);
+}
+
+.golzari-bg-neutral-50 {
+  background-color: var(--golzari-netural-50);
+}
+
+
+/* ==========================================
+   Fonts
+========================================== */
+
+.golzari-font-pinar {
+  font-family: var(--golzari-pinar-font) !important;
+}
+
+.golzari-font-yekan-bakh {
+  font-family: var(--golzari-yekan-bakh-font) !important;
+}
+
+
+body.rtl, html[dir=rtl]{
+
+  --e-global-typography-primary-font-family : var(--golzari-yekan-bakh-font);
+
+  --e-global-typography-text-font-family : var(--golzari-yekan-bakh-font);
+
+}
+
+
+/* ==========================================
+   Typography
+========================================== */
+
+.golzari-h1 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-h1); }
+
+  font: var(--golzari-typography-h1);
+}
+
+.golzari-h2 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-h2); }
+
+  font: var(--golzari-typography-h2);
+}
+
+.golzari-h3 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-h3); }
+
+  font: var(--golzari-typography-h3);
+}
+
+.golzari-h4 {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-h4); }
+
+  font: var(--golzari-typography-h4);
+}
+
+.golzari-body-large {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-body-large); }
+
+  font: var(--golzari-typography-body-large);
+}
+
+.golzari-body-medium {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-body-medium); }
+
+  font: var(--golzari-typography-body-medium);
+}
+
+.golzari-body-small {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-body-small); }
+
+  font: var(--golzari-typography-body-small);
+}
+
+.golzari-button-large {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-button-large); }
+
+  font: var(--golzari-typography-button-large);
+}
+
+.golzari-button-medium {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-button-medium); }
+
+  font: var(--golzari-typography-button-medium);
+}
+
+.golzari-button-small {
+
+  p,h1,h2,h3,h4,h5,a{ font: var(--golzari-typography-button-small); }
+
+  font: var(--golzari-typography-button-small);
+}
+
+
+
+
+
+/* =====================
+General Section Start
+=====================*/
+
+
+body,html{
+
+  overflow-x:hidden ;
+
+
+  .page-header{
+
+    display: none;
+
+  }
+
+
+  @include mixins.mobileResponsive{
+
+    .hidden-mobile {
+
+      display: none !important;
+
+    }
+
+  }
+
+
+  @include mixins.tabletResponsive{
+
+    .hidden-tablet {
+
+      display: none !important;
+
+    }
+
+  }
+
+
+}
+
+
+
+
+
+/* =====================
+General Section Ended
+=====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+Header Section Start
+=====================*/
+
+
+header{
+
+
+  border-bottom: 1px solid var(--golzari-netural-200);
+
+  height: 80px;
+
+  .golzari-header-container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: var(--golzari-container-width);
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    height: 100%;
+
+    @include mixins.mobileResponsive{
+
+      max-width: 90%;
+
+    }
+
+
+    @include mixins.tabletResponsive{
+
+      max-width: 90%;
+
+    }
+
+
+    @include mixins.laptopResponsive{
+
+      max-width: 90%;
+
+    }
+
+
+
+
+
+    .golzari-header-logo{
+
+      height: 100%;
+
+      a{
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        height: 100%;
+
+      }
+
+    }
+
+
+    .golzari-header-main-menu{
+
+      height: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      position: relative;
+
+      .menu {
+
+        display: flex;
+
+        list-style: none;
+
+        gap: 34px;
+
+        .menu-item{
+
+          color: var(--golzari-netural-400);
+
+          font : var(--golzari-typography-button-medium);
+
+          a{
+
+            color: inherit;
+
+            font : inherit;
+
+          }
+
+          &:hover{
+
+            color: var(--golzari-accent-color);
+
+            a{
+
+              color: inherit;
+
+            }
+
+          }
+
+
+          &.current-menu-item{
+
+            color: var(--golzari-accent-color);
+
+            a{
+
+              color: inherit;
+
+            }
+
+          }
+
+        }
+
+
+      }
+
+
+  }
+
+
+
+
+
+    .golzari-header-meta-section {
+
+      display: flex;
+
+      gap: 10px;
+
+      margin-right: auto;
+
+      justify-content: center;
+
+      align-items: center;
+
+
+      .golzari-header-user-info-cta {
+
+        position: relative;
+
+        height: 44px;
+
+        width: auto;
+
+        min-width: 65px;
+
+        max-width: 160px;
+
+        border-radius: 12px;
+
+        background: var(--golzari-netural-700);
+
+        color: var(--golzari-netural-50);
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 8px;
+
+        padding-right: 14px;
+
+        font:var(--golzari-typography-button-medium);
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        a{
+
+          color: inherit;
+
+          font: inherit;
+
+          text-decoration: none;
+
+        }
+
+        .golzari-header-user-info-cta-icon {
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+        }
+
+        svg{
+
+          width: 16px;
+
+          height: 16px;
+
+        }
+
+
+        .golzari-header-user-info-cta-arrow {
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          position: absolute;
+
+          left: 10px;
+
+        }
+
+        &.logged-in{
+
+          background-color: var(--golzari-netural-100);
+
+          color: var(--golzari-netural-600);
+
+        }
+
+        &.guest-mode{
+
+          width:150px;
+
+          svg{
+
+            path{
+
+              fill : var(--golzari-netural-100);
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  nav{
+
+    .menu-item{
+
+
+      a{
+
+        font : var(--golzari-typography-button-small) !important;
+
+        color: var(--golzari-netural-400) !important;
+
+      }
+
+
+      &:hover{
+
+        a{
+
+          color: var(--golzari-accent-color) !important;
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+  button.e-button-base{
+
+    color: var(--golzari-netural-50) !important;
+
+    background: var(--golzari-netural-700) !important;
+
+    font : var(--golzari-typography-button-medium) !important;
+
+    Display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+  }
+
+
+
+
+
+  .golzari-header-cart {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F7;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+
+
+    .cart-counter-badge {
+      display: none;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      background: #F05537;
+      color: #FFFFFF;
+      text-align: center;
+      border-radius: 4px;
+      font-size: 10px;
+      right: 6px;
+      top: 10px;
+    }
+
+
+    &.show-badge{
+
+      .cart-counter-badge{
+
+        display: block;
+
+      }
+
+    }
+
+
+  }
+
+
+
+  .golzari-responsive-menu-toggle {
+
+    width: 32px;
+
+    height: 32px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    display: none;
+
+    @include mixins.mobileResponsive{
+
+      display: flex;
+
+    }
+
+    @include mixins.tabletResponsive{
+
+      display: flex;
+
+    }
+
+  }
+
+
+
+  .golzari-header-user-info-drop-down{
+
+    display: none;
+
+    opacity: 0;
+
+    top : 60px;
+
+    z-index: 10000;
+
+    &.show-drop-down{
+
+      display: block;
+
+      opacity: 1 !important;
+
+    }
+
+    transition: opacity linear 0.2s;
+
+    animation: fadeOut 300ms ease forwards;
+
+    position: absolute;
+
+    background-color: var(--golzari-netural-50);
+
+    min-width: 180px;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    -webkit-box-shadow: 0 0 2px 0 var(--golzari-netural-700);
+
+    box-shadow: 0 0 2px 0 var(--golzari-netural-700);
+
+    left: 0;
+
+    .golzari-header-user-info-drop-down-list{
+
+      list-style: none;
+
+
+      padding: 0;
+
+      .golzari-header-user-info-drop-item{
+
+        height: 40px;
+
+        margin-bottom: 12px;
+
+        display: flex;
+
+        align-items: center;
+
+        &:last-child{
+
+          margin-bottom: 0;
+
+        }
+
+        .golzari-header-user-info-drop-item-link{
+
+          display: flex;
+
+          height: 100%;
+
+          align-items: center;
+
+          font: var(--golzari-typography-body-medium);
+
+          color : var(--golzari-netural-600);
+
+          gap: 10px;
+
+          .golzari-header-user-info-drop-down-icon{
+
+            display: flex;
+
+            align-items: center;
+
+            svg{
+
+              width: 20px;
+
+              height: 20px;
+
+            }
+
+          }
+
+
+        }
+
+
+
+
+      }
+
+    }
+
+
+  }
+
+
+
+
+  .responsive-menu {
+
+    position: fixed;
+
+    z-index: 10000;
+
+    top: 0;
+
+    right: -340px;
+
+    width: 340px;
+
+    height: 100%;
+
+    background-color: var(--golzari-netural-50);
+
+    padding: 50px 20px;
+
+    transition: right linear 0.3s;
+
+    -webkit-box-shadow: 0 0 2px 0 var(--golzari-netural-700);
+
+    box-shadow: 0 0 2px 0 var(--golzari-netural-700);
+
+    &.show{
+
+      right: 0;
+
+    }
+
+    .responsive-menu-top-section {
+
+      display: flex;
+
+      flex-direction: row;
+
+      align-items: center;
+
+      .responsive-menu-close-button {
+
+        margin-right: auto;
+
+        width: 25px;
+
+        height: 25px;
+
+        margin-left: 5px;
+
+        cursor: pointer;
+
+        svg{
+
+          width: 100%;
+
+          height: 100%;
+
+        }
+
+      }
+
+    }
+
+    .responsive-menu-bottom-section{
+
+      margin-top:40px;
+
+
+      .menu{
+
+        list-style: none;
+
+        padding-right: 0;
+
+        li{
+
+          height: 50px;
+
+          display: flex;
+
+          margin-bottom: 10px;
+
+          color: var(--golzari-netural-400);
+
+          font: var(--golzari-typography-button-medium);
+
+          align-items: center;
+
+          border-radius: 8px;
+
+          padding-right: 10px;
+
+          a{
+
+            color: var(--golzari-netural-400);
+
+            font: var(--golzari-typography-button-medium);
+
+          }
+
+          .responsive-menu-item-arrow {
+
+            width: 18px;
+
+            height: 18px;
+
+            margin-right: auto;
+
+            margin-left: 10px;
+
+            transform: rotate(90deg);
+
+           svg {
+
+              width: 100%;
+
+              height: 100%;
+
+            }
+
+          }
+
+          &.current-menu-item{
+
+            background-color: var(--golzari-accent-color-light);
+
+            color : var(--golzari-accent-color);
+
+            a{
+
+              color: var(--golzari-accent-color);
+
+            }
+
+            svg {
+
+              path{
+                fill : var(--golzari-accent-color);
+              }
+
+            }
+
+
+          }
+
+        }
+
+      }
+
+
+    }
+
+
+
+  }
+
+
+}
+/* =====================
+Header Section Ended
+=====================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+Footer Section Start
+=====================*/
+
+
+footer{
+
+
+  background: var(--golzari-netural-100);
+
+  padding-top: 50px;
+
+
+  .golzari-footer-container{
+
+
+    width: var(--golzari-container-width);
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+
+
+    .golzari-widgets-container {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      border-bottom: 1px solid var(--golzari-netural-200);
+
+      padding-bottom: 34px;
+
+      gap: 110px;
+
+
+      @include mixins.mobileResponsive{
+
+
+        grid-template-columns: 1fr ;
+
+        gap: 40px;
+
+
+      }
+
+
+
+      @include mixins.tabletResponsive{
+
+
+        grid-template-columns: 1fr ;
+
+        gap: 40px;
+
+
+      }
+
+
+      @include mixins.laptopResponsive{
+
+        gap: 40px;
+
+        max-width: 93%;
+
+        margin: 0 auto;
+
+      }
+
+
+      .golzari-footer-column{
+
+
+
+        @include mixins.mobileResponsive{
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          max-width: 85%;
+
+          margin: 0 auto;
+
+        }
+
+
+        margin-top: 80px;
+
+        &:first-child{
+
+          margin-top: 0;
+
+        }
+
+
+
+
+
+
+
+
+        @include mixins.tabletResponsive{
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          max-width: 85%;
+
+          margin: 0 auto;
+
+        }
+
+
+      }
+
+    }
+
+    .golzari-footer-social-button-container{
+
+      margin: 30px 0;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      @include mixins.mobileResponsive{
+
+        margin: 20px 0;
+
+      }
+
+      .golzari-footer-social-button{
+
+        text-decoration: none;
+
+        width: 224px;
+
+        height: 44px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        font:var(--golzari-typography-button-medium);
+
+        background: var(--golzari-netural-600);
+
+        border-radius: 12px;
+
+        color: var(--golzari-netural-50);
+
+      }
+
+    }
+
+
+    .golzari-footer-copyright{
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      .golzari-copyright-text{
+
+        color:var(--golzari-netural-300);
+
+        font:var(--golzari-typography-body-medium);
+
+        text-align: center;
+
+      }
+
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+  .elementor-widget-html{
+
+
+    .contact-info-widget-title-container{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+
+    .contact-info-widget-description {
+      font-weight: 400;
+    }
+
+
+
+    .footer-social-icon-container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+  }
+
+
+
+
+  .footer-copy-right-text {
+
+
+    p {
+      color: var( --golzari-netural-300 );
+      font:var(--golzari-typography-body-large);
+      text-align: center;
+      margin-top: 24px;
+    }
+
+  }
+
+
+  .footer-separator{
+    height: 1px;
+    width: 100%;
+    background: var( --golzari-netural-300 );
+    opacity: 0.3;
+    margin-bottom: 30px;
+
+  }
+
+
+
+
+
+  .widget_golzari_about{
+
+    display: flex;
+
+    flex-direction: column;
+
+
+    @include mixins.mobileResponsive{
+
+      align-items: center;
+
+      justify-content: center;
+
+    }
+
+
+    @include mixins.tabletResponsive{
+
+      align-items: center;
+
+      justify-content: center;
+
+    }
+
+
+    img{
+
+
+      max-width: 70px;
+
+      @include mixins.mobileResponsive{
+
+        width: 60px;
+
+        margin-bottom: 10px;
+
+      }
+
+
+      @include mixins.tabletResponsive{
+
+        width: 60px;
+
+        margin-bottom: 10px;
+
+      }
+
+
+    }
+
+    .golzari-about-widget-title{
+
+      font:var(--golzari-typography-button-medium);
+
+      color:var(--golzari-netural-700);
+
+      margin-top: 15px;
+
+      margin-bottom: 0;
+
+    }
+
+
+
+    .golzari-about-widget-description{
+
+      font:var(--golzari-typography-body-large);
+
+      color:var(--golzari-netural-400);
+
+      margin-top: 15px;
+
+      margin-bottom: 0;
+
+      @include mixins.mobileResponsive{
+
+        text-align: center;
+
+      }
+
+    }
+
+  }
+
+
+
+
+
+  .widget_golzari_contact{
+
+    .golzari-contact-info-item-container{
+
+      margin-bottom: 30px;
+
+      &:last-child{
+
+        margin-bottom: 0;
+
+      }
+
+      .golzari-contact-info-item-title-container{
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 10px;
+
+        margin-bottom: 5px;
+
+
+
+        @include mixins.mobileResponsive{
+
+          flex-direction: column;
+
+        }
+
+
+        @include mixins.tabletResponsive{
+
+          flex-direction: column;
+
+        }
+
+        .golzari-contact-info-item-title{
+
+          font:var(--golzari-typography-button-medium);
+
+          color:var(--golzari-netural-700);
+
+          margin-bottom: 0;
+
+        }
+
+        .golzari-contact-info-item-icon{
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          svg{
+
+            width: 17px;
+
+            height: 17px;
+
+            @include mixins.mobileResponsive{
+
+              width: 30px;
+
+              height: 30px;
+
+            }
+
+
+            @include mixins.tabletResponsive{
+
+              width: 30px;
+
+              height: 30px;
+
+            }
+
+          }
+
+        }
+
+
+
+      }
+
+      .golzari-contact-info-item-content-container{
+
+
+        .golzari-contact-info-item-content{
+
+          font:var(--golzari-typography-body-large);
+
+          color:var(--golzari-netural-400);
+
+          @include mixins.mobileResponsive{
+
+            text-align: center;
+
+          }
+
+
+          @include mixins.tabletResponsive{
+
+            text-align: center;
+
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+
+
+
+  .widget_nav_menu{
+
+    @include mixins.mobileResponsive{
+
+      text-align: center;
+
+    }
+
+
+    @include mixins.tabletResponsive{
+
+      text-align: center;
+
+    }
+
+    .footer-widget-title{
+
+      margin-top: 0;
+
+      margin-bottom: 0;
+
+      font:var(--golzari-typography-button-medium);
+
+      color:var(--golzari-netural-700);
+
+    }
+
+    ul{
+
+      list-style: none;
+
+      padding-right: 0;
+
+      margin-top: 8px;
+
+      li{
+
+        font:var(--golzari-typography-body-large);
+
+        color:var(--golzari-netural-400);
+
+        &:hover{
+
+          a{
+
+            color:var(--golzari-accent-color);
+
+          }
+
+        }
+
+      }
+
+
+    }
+
+
+  }
+
+
+  .widget_media_image{
+
+
+    figure{
+
+      margin-block-start: 0;
+
+      margin-block-end: 0;
+
+      margin-inline-start: 0;
+
+      margin-inline-end: 0;
+
+    }
+
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+Footer Section Ended
+=====================*/
+
+
+
+
+
+
+
+/* =====================
+Toast Message Start
+=====================*/
+
+.jq-toast-single{
+
+
+  font : var(--golzari-typography-body-large) !important;
+
+  font-family: var(--golzari-yekan-bakh-font ) !important;
+
+  .close-jq-toast-single {
+
+    right: auto;
+
+    left: 10px;
+
+    font-size: 20px;
+
+  }
+
+
+  .jq-toast-heading{
+
+    font: var(--golzari-typography-h4);
+
+    color : var(--golzari-netural-50);
+
+  }
+
+
+  &.jq-icon-error{
+
+    background: var(--golzari-accent-color) !important;
+
+    .jq-toast-loader{
+
+      background-color: var(--golzari-green) !important;
+    }
+
+  }
+
+
+
+
+}
+
+
+/* =====================
+Toast Message End
+=====================*/
+
+
+
+
+
+
+
+.digits_popup_wrapper{
+
+  background: transparent;
+
+  .digits-form_page{
+
+    background: rgba(0, 0, 0, 0.7);
+
+    .digits-form_container{
+
+
+        .digits-form_tabs {
+
+          width: 360px;
+
+          margin: 0 auto !important;
+
+        }
+
+        .digits-form_body {
+
+            margin-top: 12px;
+
+        }
+
+        .digits_form_index_section{
+
+          max-width: 340px;
+
+          margin : 0 auto;
+
+          .digits-form_countrycode{
+
+            display: none !important;
+
+          }
+
+        }
+
+        background-color: var(--golzari-netural-50);
+
+        width: 475px;
+
+        max-width: 90%;
+
+        z-index: 9;
+
+        padding: 40px 0;
+
+        border-radius: 12px;
+
+      .digits-form_heading {
+
+        text-align: center;
+
+        color: var(--golzari-netural-700);
+
+        font: var(--golzari-typography-h2);
+
+        font-family: var(--golzari-pinar-font);
+
+        width: 360px;
+
+        margin: 10px auto;
+
+        .digits_back_icon {
+
+          left: auto;
+
+          transform: scaleX(-1);
+
+          right: 0;
+
+        }
+
+      }
+
+      .digits-form_submit-btn {
+
+        width: 360px !important;
+
+        background: var(--golzari-accent-color);
+
+        margin: 0 auto;
+
+        color: var(--golzari-netural-300);
+
+        .digits-form_button-text{
+
+          color: var(--golzari-netural-50);
+
+          font:var(--golzari-typography-button-medium);
+
+        }
+
+        .digits-form_button_ic{
+
+          display: none !important;
+
+        }
+
+
+        .digits_loading_spinner {
+
+          border: 3px solid var(--golzari-netural-50) !important;
+
+          border-top-color: transparent !important;
+
+        }
+
+      }
+
+      .digits_show_on_index {
+
+
+        text-align: center;
+
+        color: var(--golzari-netural-700);
+
+        font: var(--golzari-typography-body-large);
+
+        .show_register,.show_login{
+
+          color: var(--golzari-netural-700);
+
+          font: var(--golzari-typography-body-large);
+
+        }
+
+        span{
+
+          opacity: 1;
+
+          font: var(--golzari-typography-body-large);
+
+        }
+
+      }
+
+    }
+
+
+
+    .digits-form_tab-item {
+
+      color: var(--golzari-netural-400);
+
+      font: var(--golzari-typography-body-medium);
+
+    }
+
+  }
+
+
+
+  .digits-form_input_row {
+
+    width: 360px;
+
+    margin: 20px auto;
+
+    input.mobile_field,#digits_reg_name,.otp_input {
+
+      width: 360px !important;
+
+      height: 55px !important;
+
+      background: var(--golzari-netural-200) !important;
+
+      color: var(--golzari-netural-300) !important;
+
+      padding: 0 15px !important;
+
+      text-align: right;
+
+    }
+
+  }
+
+
+  .digits-cancel {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns='http://www.w3.org/2000/svg' version='1.1' id='svg8' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cmetadata id='metadata5'%3E%3Crdf:rdf%3E%3Ccc:work%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage'%3E%3C/dc:type%3E%3Cdc:title%3E%3C/dc:title%3E%3Cdc:date%3E2021%3C/dc:date%3E%3Cdc:creator%3E%3Ccc:agent%3E%3Cdc:title%3ETimothée Giet%3C/dc:title%3E%3C/cc:agent%3E%3C/dc:creator%3E%3Ccc:license rdf:resource='http://creativecommons.org/licenses/by-sa/4.0/'%3E%3C/cc:license%3E%3C/cc:work%3E%3Ccc:license rdf:about='http://creativecommons.org/licenses/by-sa/4.0/'%3E%3Ccc:permits rdf:resource='http://creativecommons.org/ns%23Reproduction'%3E%3C/cc:permits%3E%3Ccc:permits rdf:resource='http://creativecommons.org/ns%23Distribution'%3E%3C/cc:permits%3E%3Ccc:requires rdf:resource='http://creativecommons.org/ns%23Notice'%3E%3C/cc:requires%3E%3Ccc:requires rdf:resource='http://creativecommons.org/ns%23Attribution'%3E%3C/cc:requires%3E%3Ccc:permits rdf:resource='http://creativecommons.org/ns%23DerivativeWorks'%3E%3C/cc:permits%3E%3Ccc:requires rdf:resource='http://creativecommons.org/ns%23ShareAlike'%3E%3C/cc:requires%3E%3C/cc:license%3E%3C/rdf:rdf%3E%3C/metadata%3E%3Crect transform='rotate(45)' ry='0' y='-1' x='4.3137083' height='2' width='14' id='rect1006' style='opacity:1;vector-effect:none;fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:1'%3E%3C/rect%3E%3Crect transform='rotate(-45)' ry='0' y='10.313708' x='-7' height='2' width='14' id='rect1006-5' style='opacity:1;vector-effect:none;fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.20000005;stroke-opacity:1'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+  }
+
+}
+
+
+.dig_popmessage_contents{
+
+  border-radius: 12px;
+
+  .dig_lase_snap{
+
+    color: var(--golzari-netural-700);
+
+    font: var(--golzari-typography-h2);
+
+  }
+
+  .dig_lase_message{
+
+    color: var(--golzari-netural-400);
+
+    font: var(--golzari-typography-body-medium);
+
+  }
+
+
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,306 @@
+@mixin smooth-transition {
+  transition: all 0.3s ease;
+}
+
+
+.no-ticket-found {
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  word-spacing: 5px;
+}
+
+.golzari-show-tickets-container {
+
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+
+  &.col-2{ grid-template-columns: repeat(2, 1fr) }
+
+  &.col-4{ grid-template-columns: repeat(3, 1fr) }
+
+  &.col-4{ grid-template-columns: repeat(4, 1fr) }
+
+  &.col-5{ grid-template-columns: repeat(5, 1fr) }
+
+  .golzari-ticket-container{
+
+
+    @include smooth-transition;
+    text-decoration: none;
+    background: var(--golzari-netural-100);
+    border-radius: 24px;
+    padding:8px;
+    width: 292px;
+
+
+    .ticket-meta-container{
+
+      padding-right: 10px;
+
+      .ticket-title{
+        @include smooth-transition;
+        font-size: 16px;
+        margin-bottom: 0;
+        font-weight: 600;
+        color: var(--golzari-netural-500);;
+        word-spacing: 3px;
+      }
+
+      .ticket-date{
+        @include smooth-transition;
+        font-size: 12px;
+        margin-bottom: 5px;
+        color: var(--golzari-netural-400);;
+        word-spacing: 3px;
+
+      }
+
+      .ticket-price{
+
+        font-size: 12px;
+        margin-bottom: 0;
+
+      }
+    }
+
+    .ticket-poster-container{
+
+      margin-bottom: 12px;
+      max-height: 390px;
+      overflow: hidden;
+      border-radius: 24px;
+
+    }
+
+
+
+    .ticket-cta{
+      @include smooth-transition;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--golzari-netural-500);
+      border-radius: 10px;
+      width: 110px;
+      height: 36px;
+      cursor: pointer;
+      margin: 20px 10px 10px 0;
+      flex-direction: row-reverse;
+      gap: 7px;
+
+      .ticket-cta-title{
+        @include smooth-transition;
+        color: var(--golzari-netural-50);
+        font-size: 14px;
+        font-weight: 400;
+
+      }
+
+      span.ticket-cta-icon {
+        @include smooth-transition;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        svg{
+
+          width: 15px;
+          height: 15px;
+          path{
+            @include smooth-transition;
+
+            fill: var(--golzari-netural-50);;
+          }
+        }
+      }
+
+
+
+      &.is-free{
+        width: 65px;
+      }
+
+
+    }
+
+
+
+    &:hover{
+
+      background: var(--golzari-netural-500);
+
+      .ticket-title{ color: var(--golzari-netural-50); }
+
+      .ticket-date{ color: var(--golzari-netural-50); }
+
+
+      .ticket-cta{
+
+        background: var(--golzari-netural-50);;
+
+        .ticket-cta-title{ color: var(--golzari-netural-500); }
+
+          svg{
+
+            path{ fill: var(--golzari-netural-500) !important; }
+
+          }
+
+      }
+
+    }
+
+    &.is-free{
+      .ticket-cta{max-width: 65px;}
+      .ticket-cta-icon{display: none !important;}
+    }
+
+    &.is-sold-out{
+
+      .ticket-cta{
+        background: var(--golzari-accent-color-mid);
+
+        svg{
+          path {
+            fill: transparent !important;
+            stroke: var(--golzari-netural-50);
+          }
+        }
+
+      }
+
+
+      &:hover{
+
+        .ticket-cta{
+          .ticket-cta-title{color:var(--golzari-netural-50)}
+        }
+
+      }
+    }
+
+
+
+    &.is-coming-soon{
+
+      pointer-events: none;
+
+      .ticket-cta{background: var(--golzari-netural-50);}
+
+      .ticket-cta-title{color: var(--golzari-netural-300);}
+
+      svg{
+
+        path{
+
+          fill : var(--golzari-netural-300) !important;
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+}
+
+
+
+
+/* ===========================
+   Small phones
+   =========================== */
+
+@media (max-width: 576px) {
+
+  .golzari-show-tickets-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+
+
+
+/* ===========================
+   Large phones
+   =========================== */
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+
+  .golzari-show-tickets-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    .golzari-ticket-container {
+
+      margin: 0 auto !important;
+
+    }
+
+  }
+
+
+
+}
+
+
+
+/* ===========================
+   Tablets
+   =========================== */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .golzari-show-tickets-container {
+    grid-template-columns: repeat(3 , 1fr) !important;
+    grid-column-gap: 15px;
+    grid-row-gap: 40px;
+
+    .golzari-ticket-container {
+
+      margin: 0 auto !important;
+      max-width: 245px;
+
+    }
+
+  }
+
+
+
+}
+
+
+
+
+/* ===========================
+   Laptops
+   =========================== */
+
+@media (min-width: 992px) and (max-width: 1280px) {
+
+  .golzari-show-tickets-container {
+    grid-template-columns: repeat(3 , 1fr) !important;
+
+    .golzari-ticket-container {
+
+      margin: 0 auto !important;
+
+    }
+
+  }
+
+}

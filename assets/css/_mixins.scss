@@ -1,0 +1,287 @@
+@mixin mobileResponsive {
+
+  @media (max-width:576px){
+
+    @content
+
+  }
+
+}
+
+
+@mixin tabletResponsive{
+
+  @media (min-width:576px) and (max-width: 768px){
+
+    @content
+
+  }
+
+}
+
+
+
+@mixin laptopResponsive{
+
+  @media (min-width:768px) and (max-width: 1280px){
+
+    @content
+
+  }
+
+}
+
+
+@mixin woocommerceMyAccountForm {
+
+.woocommerce-MyAccount-content{
+
+  h2{
+
+    font: var(--golzari-typography-h2);
+
+    margin-bottom: 40px;
+
+  }
+
+  p , address{
+
+    font: var(--golzari-typography-body-medium);
+
+
+  }
+
+  form{
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active{
+        -webkit-box-shadow: 0 0 0 30px var(--golzari-netural-100) inset !important;
+      }
+
+
+      margin-bottom: 15px;
+
+      label{
+
+        font : var(--golzari-typography-body-medium);
+
+        color: var(--golzari-netural-300);
+
+        margin-bottom: 5px;
+
+
+      }
+
+
+      input.input-text {
+
+        border: none !important;
+
+        background-color: var(--golzari-netural-100) !important;
+
+        border-radius: 12px !important;
+
+        height: 52px !important;
+
+        color: var(--golzari-netural-700) !important;
+
+        font:var(--golzari-typography-body-large) !important;
+
+        padding-right: 15px !important;
+
+
+        &:focus{
+          outline: none;
+        }
+
+      }
+
+      em{
+
+        font : var(--golzari-typography-body-medium);
+
+        color: var(--golzari-netural-300);
+
+        margin-top: 5px;
+
+        display: block;
+
+      }
+
+
+
+    fieldset {
+
+      border: none;
+
+      padding-right: 0;
+
+      margin-top: 40px;
+
+      legend {
+
+        margin-bottom: 15px;
+
+      }
+
+    }
+
+
+
+    [type=submit]{
+
+      width: 200px;
+
+      height: 52px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background-color: var(--golzari-accent-color) !important;
+
+      border-radius: 12px;
+
+      font : var(--golzari-typography-button-medium) !important;
+
+      color : var(--golzari-netural-100) !important;
+
+      margin-top:20px;
+
+      &:hover{
+
+        background-color: var(--golzari-accent-color-dark);
+
+        color : var(--golzari-netural-100) !important;
+
+
+      }
+
+
+
+    }
+
+
+    .select2-selection {
+
+      border: none;
+
+      background-color: var(--golzari-netural-100) !important;
+
+      border-radius: 12px !important;
+
+      height: 52px !important;
+
+      color: var(--golzari-netural-700) !important;
+
+      font: var(--golzari-typography-body-large) !important;
+
+      padding: 0 15px;
+
+      .select2-selection__rendered {
+
+        padding-right: 8px;
+
+        padding-left: 20px;
+
+        height: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+      }
+
+      .select2-selection__arrow {
+
+        left: 15px !important;
+
+        right: auto;
+
+      }
+
+    }
+
+  }
+
+
+
+}
+
+
+  .select2-results {
+
+
+    background: var(--golzari-netural-100) !important;
+
+    ul{
+
+
+      background: var(--golzari-netural-100) !important;
+
+      li{
+
+        background: var(--golzari-netural-100) !important;
+
+        color: var(--golzari-netural-700) !important;
+
+        font:var(--golzari-typography-body-large) !important;
+
+        padding-right: 15px !important;
+
+
+      }
+
+    }
+
+
+  }
+
+
+  .select2-search__field{
+
+    border: none !important;
+
+    border-radius: 12px !important;
+
+    color: var(--golzari-netural-700) !important;
+
+    font:var(--golzari-typography-body-large) !important;
+
+    padding-right: 15px !important;
+
+    margin-bottom: 20px !important;
+
+    &:focus{
+      outline: none;
+    }
+
+
+  }
+
+
+  .select2-search--dropdown {
+
+    background: var(--golzari-netural-100) !important;
+  }
+
+
+  .select2-dropdown--below {
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+  }
+
+  .form-row{
+
+    margin-bottom: 20px !important;
+
+  }
+
+}

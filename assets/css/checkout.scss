@@ -1,0 +1,336 @@
+@use 'mixins';
+
+
+.woocommerce-checkout{
+
+  .page-content{
+
+    margin: 50px auto !important;
+
+    max-width: 100% !important;
+
+    width: var(--golzari-container-width);
+
+    @include mixins.mobileResponsive{
+
+      max-width: 95% !important;
+
+      margin: 20px auto !important;
+
+    }
+
+
+    @include mixins.tabletResponsive{
+
+      max-width: 95% !important;
+
+      margin: 20px auto !important;
+
+    }
+
+
+    @include mixins.laptopResponsive{
+
+      max-width: 95% !important;
+
+      margin: 20px auto !important;
+
+    }
+
+    .woocommerce-form-coupon-toggle{ display: none ; }
+
+    h3{
+
+      font:var(--golzari-typography-button-large);
+
+      color : var(--golzari-netural-600);
+
+      margin-bottom: 20px;
+
+    }
+
+
+    form.checkout{
+
+
+      #customer_details{
+
+        display: flex;
+
+        @include mixins.mobileResponsive{
+
+          flex-direction: column;
+
+          .form-row {
+
+
+            float: none;
+
+            width: 100%;
+
+            margin-top: 30px;
+
+          }
+
+        }
+
+
+        @include mixins.tabletResponsive{
+
+          .col-2{
+            display: none;
+          }
+
+        }
+
+
+        @include mixins.laptopResponsive{
+
+          .col-2{
+            display: none;
+          }
+
+          .col-1{
+            width: 100%;
+          }
+
+        }
+
+      }
+
+
+       label{
+
+         font : var(--golzari-typography-body-medium);
+
+         color : var(--golzari-netural-400);
+
+         margin-bottom: 6px;
+
+       }
+
+
+      .woocommerce-input-wrapper{
+
+        .input-text{
+
+          height: 52px;
+
+          border-radius: 12px;
+
+          background: var(--golzari-netural-100);
+
+          border:none;
+
+          padding-right: 14px;
+
+          &:focus{
+
+            outline: none;
+
+          }
+
+        }
+
+      }
+
+
+
+
+      #order_review_heading{
+
+        margin-top: 50px;
+
+
+      }
+
+
+
+      #order_review{
+
+
+        .woocommerce-checkout-review-order-table{
+
+
+          border: none;
+
+          box-shadow: none;
+
+
+          thead{
+
+             th{
+
+               border-top: none;
+
+               border-left: none;
+
+               border-right: none;
+
+               font:var(--golzari-typography-body-medium);
+
+               color : var(--golzari-netural-300);
+
+               border-bottom: none;
+
+               padding: 15px 0;
+
+               strong{
+
+                 font: inherit;
+
+                 color: inherit;
+
+               }
+
+             }
+
+          }
+
+          tbody{
+
+            td{
+
+                border-left: none;
+
+                border-right: none;
+
+                background: transparent;
+
+                border-bottom: none;
+
+                font:var(--golzari-typography-body-medium);
+
+                color : var(--golzari-netural-600);
+
+                padding: 15px 0;
+
+
+              strong{
+
+                  font: inherit;
+
+                  color: inherit;
+
+                }
+
+            }
+
+          }
+
+
+          tfoot{
+
+
+            th,td{
+
+              border-left: none;
+
+              border-right: none;
+
+              background: transparent;
+
+              border-bottom: none;
+
+              font:var(--golzari-typography-body-medium);
+
+              color : var(--golzari-netural-600);
+
+              padding: 15px 0;
+
+
+              strong{
+
+                font: inherit;
+
+                color: inherit;
+
+              }
+
+            }
+
+          }
+
+
+        }
+
+
+      }
+
+
+
+      #payment{
+
+        background: transparent;
+
+        margin-top: 50px;
+
+        .woocommerce-privacy-policy-text{
+
+          font:var(--golzari-typography-body-medium);
+
+          a{
+
+            color: inherit;
+
+            text-decoration: none;
+
+          }
+
+        }
+
+        #place_order{
+
+          height: 52px;
+
+          border-radius: 12px;
+
+          background: var(--golzari-accent-color);
+
+          font : var(--golzari-typography-button-medium);
+
+          color: var(--golzari-netural-50);
+
+          width: 224px;
+
+          margin-top: 50px;
+
+          @include mixins.mobileResponsive{
+
+            width: 100%;
+
+          }
+
+        }
+
+
+       .payment_box {
+
+         background: var(--golzari-netural-100);
+
+         border-radius: 12px;
+
+         &:before{
+
+           border: 1em solid var(--golzari-netural-100);
+
+           border-left-color: transparent;
+
+           border-right-color: transparent;
+
+           border-top-color: transparent;
+
+         }
+
+        }
+
+      }
+
+
+
+    }
+
+  }
+
+
+}

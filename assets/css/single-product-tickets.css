@@ -1,0 +1,307 @@
+#primary .woocommerce-breadcrumb {
+  display: none;
+}
+#primary {
+  margin: 100px auto;
+  max-width: 1044px;
+}
+#primary .product {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+}
+#primary .product .thumbnail-container {
+  max-width: 360px;
+  overflow: hidden;
+}
+#primary .product .thumbnail-container img {
+  border-radius: 24px;
+}
+#primary .product .content-container .ticket-title {
+  display: flex;
+  align-items: center;
+}
+#primary .product .content-container h1 {
+  margin: 0;
+  font: var(--golzari-typography-h2);
+  font-family: var(--golzari-pinar-font);
+}
+#primary .product .content-container .ticket-meta-container {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+#primary .product .content-container .ticket-meta-container .meta-data-item {
+  min-width: 158px;
+}
+#primary .product .content-container .ticket-meta-container .meta-data-item .meta-title-container {
+  display: flex;
+  gap: 5px;
+}
+#primary .product .content-container .ticket-meta-container .meta-data-item .meta-title-container .meta-title-icon {
+  display: flex;
+  align-items: center;
+}
+#primary .product .content-container .ticket-meta-container .meta-data-item .meta-title-container .meta-title-icon svg {
+  width: 16px;
+  height: 16px;
+}
+#primary .product .content-container .ticket-meta-container .meta-data-item .meta-title-container .meta-title-text {
+  font: var(--golzari-typography-body-medium);
+}
+#primary .product .content-container .ticket-meta-container .meta-data-item .meta-value-container {
+  font: var(--golzari-typography-body-medium);
+  color: var(--golzari-netural-400);
+  word-spacing: 5px;
+}
+#primary .product .content-container .ticket-seats-data-container {
+  display: flex;
+  gap: 10px;
+  margin-right: auto;
+}
+#primary .product .content-container .ticket-seats-data-container .tickets-seats {
+  display: flex;
+  background: var(--golzari-accent-color-light);
+  color: var(--golzari-accent-color);
+  border-radius: 20px;
+  min-width: 87px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  font: var(--golzari-typography-body-small);
+}
+#primary .product .content-container .ticket-seats-data-container .tickets-remaining-seats {
+  font: var(--golzari-typography-body-small);
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#primary .product .content-container .description-container {
+  margin-top: 32px;
+}
+#primary .product .content-container .description-container .description-title {
+  font: var(--golzari-typography-h4);
+}
+#primary .product .content-container .description-container .ticket-description {
+  font: var(--golzari-typography-body-medium);
+  color: var(--golzari-netural-400);
+}
+#primary .product .content-container .ticket-location-container {
+  margin-top: 32px;
+}
+#primary .product .content-container .ticket-location-container .location-title {
+  font: var(--golzari-typography-h4);
+}
+#primary .product .content-container .ticket-location-container .location-map-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+#primary .product .content-container .ticket-location-container .location-map-container iframe {
+  border: none;
+  border-radius: 15px;
+  min-height: 200px;
+  width: 100%;
+}
+#primary .product .content-container .purchase-button-wrap {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container {
+  width: 100%;
+  height: 52px;
+  background: var(--golzari-accent-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--golzari-netural-50);
+  cursor: pointer;
+  text-decoration: none;
+  gap: 10px;
+  transition: all 0.2s linear;
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container:hover {
+  background: var(--golzari-accent-color-dark);
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container.disabled {
+  pointer-events: none;
+  background: var(--golzari-accent-color-mid);
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container.disabled svg path {
+  fill: transparent !important;
+  stroke: var(--golzari-netural-50);
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container.disabled.coming-soon {
+  background: var(--golzari-accent-color-light);
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container.disabled.coming-soon svg path {
+  fill: var(--golzari-netural-50) !important;
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container .purchase-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container .purchase-icon svg {
+  width: 20px;
+  height: 20px;
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container .purchase-icon svg path {
+  fill: var(--golzari-netural-50);
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container .purchase-text {
+  font: var(--golzari-typography-button-medium);
+}
+#primary .product .content-container .purchase-button-wrap .purchase-button-container .purchase-text .ready-step {
+  display: none;
+}
+#primary .product .content-container .purchase-button-wrap .quantity {
+  display: none;
+}
+#primary .product .content-container .purchase-button-wrap.ready-purchase .quantity {
+  display: flex;
+}
+#primary .product .content-container .purchase-button-wrap.ready-purchase .ready-step {
+  display: flex !important;
+}
+#primary .product .content-container .purchase-button-wrap.ready-purchase .first-step {
+  display: none;
+}
+#primary .product .content-container .purchase-button-wrap.doing-ajax {
+  pointer-events: none;
+  opacity: 0.5;
+}
+#primary .product .content-container #error-wrap {
+  margin-top: 24px;
+  font: var(--golzari-typography-body-medium);
+  flex-direction: column;
+  gap: 12px;
+  line-height: 1.5em;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  padding-top: 10px;
+  display: none;
+}
+#primary .product .content-container #error-wrap a.button.wc-forward {
+  width: 100%;
+  height: 52px;
+  background: var(--golzari-accent-color);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--golzari-netural-50);
+  cursor: pointer;
+  text-decoration: none;
+  gap: 10px;
+  transition: all 0.2s linear;
+  margin-top: 10px;
+}
+
+/* ===========================
+   Small phones
+   =========================== */
+@media (max-width: 576px) {
+  #primary {
+    margin: 20px auto;
+    max-width: 1044px;
+  }
+  #primary .product {
+    width: 95%;
+    margin: 20px auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #primary .product .thumbnail-container {
+    height: auto;
+  }
+  #primary .product .content-container .ticket-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  #primary .product .content-container .ticket-seats-data-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 0;
+  }
+  #primary .product .content-container .ticket-meta-container {
+    gap: 30px;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+/* ===========================
+   Large phones
+   =========================== */
+@media (min-width: 576px) and (max-width: 768px) {
+  #primary {
+    margin: 20px auto;
+    max-width: 1044px;
+  }
+  #primary .product {
+    width: 95%;
+    margin: 20px auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #primary .product .thumbnail-container {
+    height: auto;
+  }
+  #primary .product .content-container .ticket-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  #primary .product .content-container .ticket-seats-data-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 0;
+  }
+  #primary .product .content-container .ticket-meta-container {
+    gap: 30px;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+/* ===========================
+   Tablets
+   =========================== */
+@media (min-width: 768px) and (max-width: 992px) {
+  #primary {
+    margin: 20px auto;
+    max-width: 1044px;
+  }
+  #primary .product {
+    width: 95%;
+    margin: 20px auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #primary .product .thumbnail-container {
+    height: auto;
+  }
+  #primary .product .content-container .ticket-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  #primary .product .content-container .ticket-seats-data-container {
+    display: flex;
+    gap: 10px;
+    margin-right: 0;
+  }
+  #primary .product .content-container .ticket-meta-container {
+    gap: 30px;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+/* ===========================
+   Laptops
+   =========================== */
+
+/*# sourceMappingURL=single-product-tickets.css.map */

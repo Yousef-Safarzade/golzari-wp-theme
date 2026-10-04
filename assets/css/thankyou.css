@@ -1,0 +1,65 @@
+.woocommerce-order-received .woocommerce-order .order-success-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.woocommerce-order-received .woocommerce-order .order-success-container .order-success-main-title {
+  margin: 0;
+}
+.woocommerce-order-received .woocommerce-order .order-success-container .order-success-download-ticket {
+  display: flex;
+  flex-direction: row;
+  width: 133px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 12px;
+  background: var(--golzari-accent-color);
+  color: var(--golzari-netural-50);
+  font: var(--golzari-typography-button-medium);
+  text-decoration: none;
+}
+.woocommerce-order-received .woocommerce-order .order-success-container .order-success-download-ticket .order-success-button-icon {
+  display: flex;
+  align-items: center;
+}
+.woocommerce-order-received .woocommerce-order .order-error-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.woocommerce-order-received .woocommerce-order .order-error-container .order-error-main-title {
+  margin: 0;
+}
+.woocommerce-order-received .woocommerce-order .order-error-container .order-error-icon-container .order-error-icon {
+  max-width: 84px;
+}
+.woocommerce-order-received .woocommerce-order .order-error-container .order-error-contact-support {
+  display: flex;
+  flex-direction: row;
+  width: 175px;
+  height: 52px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 12px;
+  background: var(--golzari-accent-color);
+  color: var(--golzari-netural-50);
+  font: var(--golzari-typography-button-medium);
+  text-decoration: none;
+}
+.woocommerce-order-received .woocommerce-order .order-error-container .order-error-contact-support .order-error-button-icon {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=thankyou.css.map */

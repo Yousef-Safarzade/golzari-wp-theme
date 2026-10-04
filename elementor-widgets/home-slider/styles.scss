@@ -1,0 +1,265 @@
+.golzari-home-slider-container{
+
+  .main-carousel{
+
+    background: var(--golzari-netural-500);
+
+    border-radius: 24px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 30px;
+
+    &:not(.flickity-enabled){
+
+      .golzari-home-slider-item:not(.slide-1){
+        display: none !important;
+      }
+
+    }
+
+    .flickity-prev-next-button { display: none; }
+
+    .golzari-home-slider-item{
+
+      width: 100%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      background: var(--golzari-netural-500);
+
+      border-radius: 24px;
+
+      .golzari-home-slider-item-inner {
+
+
+        width: 100%;
+
+        min-height: 460px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        overflow: hidden;
+
+        border-radius: 24px;
+
+        .golzari-home-slider-item-image{
+
+          overflow: hidden;
+
+          background-size: cover;
+
+          background-repeat: no-repeat;
+
+          background-position: center center;
+
+        }
+
+        .golzari-home-slider-item-content{
+
+
+          display: flex;
+
+          flex-direction: column;
+
+          justify-content: center;
+
+          padding-right: 59px;
+
+          .golzari-home-slider-item-title{
+
+            font-size:34px;
+
+            line-height: 46px;
+
+            font-weight: 600;
+
+            color:var(--golzari-netural-50);
+
+            max-width: 420px;
+
+            margin-bottom: 0;
+
+            font-family: var(--golzari-pinar-font);
+
+          }
+
+          .golzari-home-slider-item-description{
+
+            color:var(--golzari-netural-200);
+
+            max-width: 390px;
+
+            margin-top: 20px;
+
+            margin-bottom: 0;
+
+          }
+
+          .golzari-home-slider-item-link{
+
+            background: var(--golzari-accent-color);
+
+            color: var(--golzari-netural-50);
+
+            text-decoration: none;
+
+            border-radius: 12px;
+
+            padding:14px 16px;
+
+           font:var(--golzari-typography-button-medium);
+
+            margin-top: 20px;
+
+            display: flex;
+
+            width: max-content;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            .golzari-home-slider-item-link-icon{
+
+              display: flex;
+
+              align-items: center;
+
+              justify-content: center;
+
+              width: 16px;
+
+              height: 16px;
+
+              svg{
+
+                path{
+
+                  fill: var(--golzari-netural-50) !important;
+
+                }
+
+              }
+
+            }
+
+          }
+
+
+        }
+
+      }
+
+    }
+
+
+
+    .flickity-page-dots {
+      bottom: -30px;
+      .dot{
+        width: 8px;
+        height: 8px;
+        background: var(--golzari-netural-300);
+        border-radius: 10px;
+      }
+      .is-selected{
+        background: var(--golzari-netural-400);
+        width: 18px;
+      }
+    }
+
+  }
+
+
+
+}
+
+
+
+@media  (max-width: 768px){
+
+
+  .golzari-home-slider-container {
+
+    max-width: 550px;
+
+    margin: 0 auto;
+
+    .golzari-home-slider-item {
+
+      .golzari-home-slider-item-inner{
+
+        display: flex !important;
+
+        flex-direction: column-reverse;
+
+
+        .golzari-home-slider-item-content{
+
+
+          min-height: 300px;
+
+          width: 100%;
+
+          padding-right: 0 !important;
+
+          justify-content: center;
+
+          align-items: center;
+
+          text-align: center;
+
+          .golzari-home-slider-item-title {
+
+            font-size: 27px !important;
+
+            margin-top: 0 !important;
+
+          }
+
+
+
+          .golzari-home-slider-item-link {
+
+            margin-top: 30px !important;
+
+          }
+
+          .golzari-home-slider-item-description{
+
+            max-width: 310px !important;
+
+          }
+
+        }
+
+        .golzari-home-slider-item-image {
+
+          min-height: 250px;
+
+          width: 100%;
+
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+
+}
+
+
+

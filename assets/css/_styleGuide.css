@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Pinar";
+  src: url("../fonts/Pinar-SemiBold.woff2") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pinar";
+  src: url("../fonts/Pinar-Bold.woff2") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Yekan Bakh";
+  src: url("../fonts/yekan-bakh-heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --golzari-container-width: 1240px;
+  --golzari-accent-color: #F05537;
+  --golzari-accent-color-dark: #ED4627;
+  --golzari-accent-color-light: #FFDBD4;
+  --golzari-accent-color-subtle: #FFF1EE;
+  --golzari-netural-700: #0B0B0F;
+  --golzari-netural-500: #1A1A22;
+  --golzari-netural-400: #505062;
+  --golzari-netural-200: #EBEBEB;
+  --golzari-netural-300: #4A4A5A;
+  --golzari-netural-100: #F7F7F7;
+  --golzari-netural-50: #FFFFFF;
+  --golzari-pinar-font: 'Pinar';
+  --golzari-yekan-bakh-font: 'Yekan Bakh';
+  --golzari-typography-h1: 600 40px/52px var(--golzari-yekan-bakh-font);
+  --golzari-typography-h2: 600 28px/40px var(--golzari-yekan-bakh-font);
+  --golzari-typography-h3: 600 22px/34px var(--golzari-yekan-bakh-font);
+  --golzari-typography-h4: 600 18px/34px var(--golzari-yekan-bakh-font);
+  --golzari-typography-body-large: 400 16px/28px var(--golzari-yekan-bakh-font);
+  --golzari-typography-body-medium: 400 14px/24px var(--golzari-yekan-bakh-font);
+  --golzari-typography-body-small: 400 12px/22px var(--golzari-yekan-bakh-font);
+  --golzari-typography-button-large: 600 18px/16px var(--golzari-yekan-bakh-font);
+  --golzari-typography-button-medium: 600 16px/28px var(--golzari-yekan-bakh-font);
+  --golzari-typography-button-small: 600 14px/20px var(--golzari-yekan-bakh-font);
+}
+
+body.rtl, html[dir=rtl] {
+  --e-global-typography-primary-font-family: var(--golzari-yekan-bakh-font);
+  --e-global-typography-text-font-family: var(--golzari-yekan-bakh-font);
+}
+
+.golzari-pinar-font {
+  font-family: var(--golzari-pinar-font);
+}
+
+.golzari-yekan-bakh-font {
+  font-family: var(--golzari-yekan-bakh-font);
+}
+
+/*# sourceMappingURL=style-guide.css.map */

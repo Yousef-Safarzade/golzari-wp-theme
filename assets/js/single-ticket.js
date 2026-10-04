@@ -1,0 +1,119 @@
+jQuery(document).ready(function($){
+
+
+    handlePurchaseSingleTicketButtonFirstStep();
+
+    console.log(localizedData)
+
+});
+
+
+
+
+function handlePurchaseSingleTicketButtonFirstStep(){
+
+    if( jQuery(".purchase-button-container").length < 1){
+
+        return false;
+
+    }
+
+    jQuery(".purchase-button-container").on("click",function (e){
+
+        e.preventDefault();
+
+        let $button = jQuery('.purchase-button-container');
+
+       let $parent = $button.parents('.purchase-button-wrap');
+
+        if ( !$parent.hasClass('ready-purchase') ){
+
+            $parent.addClass('ready-purchase')
+            
+        } else {
+
+            handlePurchaseSingleTicketButtonFinalStep();
+
+        }
+
+
+    })
+
+
+}
+
+
+
+function handlePurchaseSingleTicketButtonFinalStep(){
+
+    let $button = jQuery('.purchase-button-container');
+
+    let $parent = $button.parents('.purchase-button-wrap');
+
+    const quantityInput = jQuery('.quantity #value');
+
+    const $errorContainer = jQuery("#error-wrap");
+
+
+    if ( !$parent.hasClass('ready-purchase') ){
+
+        return false;
+
+    }
+
+
+    const productID = $button.attr('data-product-id');
+
+    const quantity = quantityInput.html();
+
+    if( !productID ){
+
+        return false;
+
+    }
+
+
+
+
+    jQuery.ajax({
+        type: 'POST',
+        url: localizedData.ajaxurl,
+        data: {
+            'action' : 'glozari_add_to_cart',
+            product_id: productID,
+            quantity: parseInt(quantity)
+        },
+        beforeSend : function(){
+
+            $parent.addClass('doing-ajax');
+
+            $errorContainer.fadeOut().html('');
+
+        },
+        success: function(response) {
+
+            $parent.removeClass('doing-ajax');
+
+
+            jQuery(document.body).trigger('added_to_cart', [
+                response.fragments,
+                response.cart_hash
+            ]);
+
+
+            window.location.href=localizedData.cartUrl;
+
+        },
+        error: function(response){
+
+            $parent.removeClass('doing-ajax');
+
+            $errorContainer.html(response.responseJSON.notices[0].notice).fadeIn();
+
+
+
+        }
+    });
+
+
+}

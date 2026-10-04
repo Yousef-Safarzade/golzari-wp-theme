@@ -1,0 +1,220 @@
+@use '../../assets/css/mixins';
+
+
+
+
+.golzari-testimonials-main-wrapper{
+
+  position: relative;
+
+  .golzari-testimonial-main-header{
+
+    margin-bottom: 40px;
+
+    display: flex;
+
+
+    @include mixins.mobileResponsive{
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 20px;
+
+      margin-bottom: 20px;
+
+    }
+
+    .golzari-testimonial-main-title{
+
+      font:var(--golzari-typography-h2);
+
+      font-family: var(--golzari-pinar-font );
+
+    }
+
+    .golzari-testimonial-arrow-navigation{
+
+      margin-right: auto;
+
+      display: flex;
+
+      gap: 5px;
+
+      @include mixins.mobileResponsive{
+
+        margin: auto;
+      }
+
+      .golzari-testimonial-arrow{
+
+        cursor: pointer;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        &.prev-arrow{
+
+          transform: rotate(180deg);
+
+        }
+
+
+      }
+
+    }
+
+
+
+  }
+
+
+  .golzari-testimonials{
+
+
+
+
+
+
+    .golzari-testimonials-item{
+
+      width: 33%;
+
+      @include mixins.mobileResponsive{
+
+        width: 100%;
+
+        max-width: 400px;
+
+      }
+
+
+      @include mixins.tabletResponsive{
+
+        width: 100%;
+
+        max-width: 400px;
+
+      }
+
+
+      @include mixins.laptopResponsive{
+
+        width: 100%;
+
+        max-width: 400px;
+
+      }
+
+
+
+      padding: 32px 25px;
+
+      background-color: var(--golzari-netural-100);
+
+      border-radius: 16px;
+
+      margin-right: 10px;
+
+
+
+
+
+
+
+
+      .golzari-testimonial-header-section{
+
+        display: flex;
+
+        .golzari-testimonial-author{
+
+
+          display: flex;
+
+          flex-direction: column;
+
+
+          .golzari-testimonial-author-name{
+
+            font : var(--golzari-typography-body-large);
+
+            color: var(--golzari-netural-700);
+
+          }
+
+
+          .golzari-testimonial-author-job-title{
+
+            font : var(--golzari-typography-body-small);
+
+            color : var(--golzari-netural-300);
+
+
+          }
+
+
+        }
+
+        .golzari-testimonial-rating{
+
+          margin-right: auto;
+
+        }
+
+
+      }
+
+
+      .golzari-testimonial-content-section{
+
+        margin-top: 24px;
+
+        .golzari-testimonial-content{
+
+          font : var(--golzari-typography-body-medium);
+
+          color : var(--golzari-netural-400);
+
+        }
+
+      }
+
+
+      .golzari-testimonial-footer-section{
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-end;
+
+        .golzari-testimonial-date{
+
+          font : var(--golzari-typography-body-small);
+
+          color : var(--golzari-netural-300);
+
+          word-spacing: 5px;
+
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+
+}
+

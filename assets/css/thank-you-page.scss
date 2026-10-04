@@ -1,0 +1,317 @@
+@use 'mixins';
+
+.woocommerce-order-received{
+
+  .page-content{
+
+
+    width : var(--golzari-container-width);
+
+    max-width: 100%;
+
+    margin: 50px auto;
+
+    .woocommerce-order{
+
+
+      .woocommerce-thankyou-order-received{
+
+        font:var(--golzari-typography-h4);
+
+        @include mixins.mobileResponsive{
+
+          text-align: center;
+
+        }
+
+
+        @include mixins.tabletResponsive{
+
+          text-align: center;
+
+        }
+
+
+
+        }
+
+      .woocommerce-order-overview{
+
+
+        &:before{
+
+          display: none;
+
+        }
+
+        margin-top: 40px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        padding-right:  0;
+
+        gap: 20px;
+
+
+        @include mixins.mobileResponsive{
+
+          flex-direction: column;
+
+          align-items: flex-start;
+
+          gap: 0;
+
+          li{
+
+            height: 50px;
+
+            width: 100%;
+
+            border-left: none;
+
+            border-bottom: 1px solid var(--golzari-netural-200);
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            strong{
+
+              margin-top : 0 !important;
+
+            }
+
+          }
+
+        }
+
+
+
+
+        @include mixins.tabletResponsive{
+
+          flex-direction: column;
+
+          align-items: flex-start;
+
+          gap: 0;
+
+          li{
+
+            height: 50px;
+
+            width: 100%;
+
+            border-left: none;
+
+            border-bottom: 1px solid var(--golzari-netural-200);
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            strong{
+
+              margin-top : 0 !important;
+
+            }
+
+          }
+
+        }
+
+
+        li{
+
+          font:var(--golzari-typography-body-medium);
+
+          strong{
+
+            font:inherit;
+
+            margin-top:10px;
+
+            font-weight: 600;
+
+          }
+
+
+        }
+
+      }
+
+
+
+
+      .woocommerce-order-details{
+
+        margin-top: 60px;
+
+        .woocommerce-order-details__title{
+
+          font:var(--golzari-typography-h3);
+
+          @include mixins.tabletResponsive{
+
+            text-align: center;
+
+          }
+
+          @include mixins.mobileResponsive{
+
+            text-align: center;
+
+          }
+
+        }
+
+
+        .woocommerce-table{
+
+          border: none;
+
+          background: transparent !important;
+
+          tr{
+
+            height: 50px;
+
+          }
+
+          thead{
+
+            tr{
+
+              border:none ;
+
+              font:var(--golzari-typography-body-medium);
+
+              color: var(--golzari-netural-300);
+
+              th{
+
+                border: none !important;
+
+
+              }
+
+            }
+
+          }
+
+          tbody{
+
+            tr{
+
+              td{
+
+                background: transparent;
+
+                border-left : none;
+
+                border-right: none;
+
+                border-bottom: none;
+
+                font:var(--golzari-typography-body-medium);
+
+                a,strong{
+
+                  font:inherit;
+
+                  color: inherit;
+
+                  text-decoration: none;
+
+
+                }
+
+              }
+
+            }
+
+          }
+
+
+          tfoot{
+
+            tr{
+
+              th,td{
+
+                background: transparent;
+
+                border-left : none;
+
+                border-right: none;
+
+                border-bottom: none;
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+
+
+
+      .woocommerce-customer-details{
+
+        margin-top: 60px;
+
+        .woocommerce-column__title{
+
+          font:var(--golzari-typography-h3);
+
+          @include mixins.tabletResponsive{
+
+            text-align: center;
+
+          }
+
+          @include mixins.mobileResponsive{
+
+            text-align: center;
+
+          }
+
+        }
+
+        address{
+
+          border : 1px solid var(--golzari-netural-300);
+
+          border-radius: 12px;
+
+          font:var(--golzari-typography-body-medium);
+
+          line-height: 2em;
+
+        }
+
+
+      }
+
+
+    }
+
+
+
+  }
+
+
+
+}

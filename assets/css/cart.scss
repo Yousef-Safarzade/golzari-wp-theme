@@ -1,0 +1,1202 @@
+@use 'mixins';
+
+body.woocommerce-cart{
+
+  .page-content{
+
+    width: 100%;
+
+    max-width: var(--golzari-container-width);
+
+    margin: 50px auto;
+
+    min-height: 50vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    .wp-block-woocommerce-cart{
+
+      max-width: var(--golzari-container-width);
+
+      margin-inline: 0;
+
+
+
+
+
+      .wc-block-components-main{
+
+
+
+
+        .wc-block-cart-items{
+
+
+
+          tbody{
+
+            border-collapse: separate;
+
+          }
+
+          > thead{
+
+            display: none;
+          }
+
+
+          .wc-block-cart-items__row{
+
+            background: var(--golzari-netural-100);
+
+            border:none !important;
+
+            border-bottom: 10px solid white !important;
+
+
+
+            td{
+
+              padding-top:24px;
+
+              padding-bottom: 24px;
+
+              border:none !important;
+
+              &.wc-block-cart-item__image{
+
+                padding-right: 24px;
+
+                padding-left: 0;
+
+                width: 180px;
+
+                img{
+
+                  max-width: 130px;
+
+                  border-radius: 6px;
+                }
+
+              }
+
+              .wc-block-cart-item__wrap{
+
+
+                a{
+
+                    font:var(--golzari-typography-button-medium);
+
+                    color : var(--golzari-netural-600);
+
+                    text-decoration: none;
+
+                }
+
+
+
+                .wc-block-cart-item__prices{
+
+
+                  min-height: 30px;
+
+                    .price{
+
+                        font: var(--golzari-typography-button-small);
+
+                        color:var(--golzari-accent-color);
+
+                    }
+
+
+                }
+
+
+                .wc-block-components-product-metadata{
+
+
+                  min-height: 30px;
+
+
+                }
+
+                .wc-block-cart-item__quantity{
+
+                  .wc-block-components-quantity-selector{
+
+                    border : 1px solid var(--golzari-netural-400);
+
+                    border-radius: 8px;
+
+                    .wc-block-components-quantity-selector__input{
+
+                      font:var(--golzari-typography-button-small);
+
+                      color: var(--golzari-netural-600);
+
+                    }
+
+                    button{
+
+                      font:var(--golzari-typography-button-small);
+
+                      color: var(--golzari-netural-600);
+
+                      &:focus{
+
+                        outline: none !important;
+
+                        box-shadow: none !important;
+
+                      }
+
+                    }
+
+                  }
+
+                  .wc-block-cart-item__remove-link{
+
+                    svg{
+
+                      fill:var(--golzari-accent-color-dark);
+                    }
+
+                  }
+
+
+                }
+
+
+
+
+
+              }
+
+            }
+
+
+            .wc-block-cart-item__total{
+
+              padding-left: 24px;
+
+              .price{
+
+                font: var(--golzari-typography-button-small);
+
+                color:var(--golzari-accent-color);
+
+              }
+
+            }
+
+          }
+
+
+        }
+
+
+
+      }
+
+
+
+      .wc-block-components-sidebar{
+
+          .wc-block-cart__totals-title,.wc-block-components-totals-item__label{
+
+
+            font:var(--golzari-typography-body-medium);
+
+            color : var(--golzari-netural-400);
+
+
+          }
+
+
+          .wc-block-components-totals-item__value{
+
+            font:var(--golzari-typography-button-small);
+
+            color : var(--golzari-netural-600);
+
+          }
+
+
+          .wc-block-cart__submit-container{
+
+            a{
+
+
+              border-radius: 12px;
+
+              text-decoration: none;
+
+              color: var(--golzari-netural-50);
+
+              background: var(--golzari-accent-color);
+
+            }
+
+
+          }
+
+
+        .wc-block-components-totals-coupon__form{
+
+          padding: 12px;
+
+          border: 1px solid var(--golzari-netural-200);
+
+          border-radius: 12px;
+
+          .wc-block-components-button{
+
+            border: none;
+
+            background: var(--golzari-netural-100);
+
+            font:var(--golzari-typography-button-medium);
+
+            color: var(--golzari-netural-300);
+
+            border-radius: 12px;
+
+
+          }
+
+          label{
+
+            font: var(--golzari-typography-button-small);
+
+            color: var(--golzari-netural-400);
+
+          }
+
+          #wc-block-components-totals-coupon__input-coupon{
+
+            border:none;
+
+            font: var(--golzari-typography-button-small);
+
+            color: var(--golzari-netural-400);
+
+
+
+            &:focus{
+
+              outline: none;
+
+              border: none;
+
+            }
+
+
+          }
+
+        }
+
+      }
+
+
+
+
+
+
+
+  }
+
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.golzari-cart-container{
+
+
+  .golzari-cart-title{
+
+    font : var(--golzari-typography-h3);
+
+    color : var(--golzari-netural-600);
+
+    margin-bottom: 24px;
+
+  }
+
+
+
+  .golzari-cart-content{
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+
+    &.doing-ajax{
+
+      pointer-events: none;
+
+      opacity: 0.3;
+
+    }
+
+
+
+
+    .golzari-cart-items{
+
+      min-width: 800px;
+
+      .golzari-cart-item{
+
+        background: var(--golzari-netural-100);
+
+        border-radius: 12px;
+
+        padding: 24px;
+
+        margin-bottom: 24px;
+
+        display: flex;
+
+        gap: 24px;
+
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.3);
+
+
+        .golzari-cart-item-image-holder{
+
+            width: 90px;
+
+         }
+
+
+        .golzari-cart-item-title{
+
+
+          font : var(--golzari-typography-button-medium);
+
+          color : var(--golzari-netural-600);
+
+
+        }
+
+        .golzari-cart-item-price{
+
+          bdi{
+
+            font:var(--golzari-typography-button-small);
+
+            color: var(--golzari-accent-color);
+
+          }
+
+        }
+
+
+        .golzari-cart-item-description{
+
+
+
+          .golzari-ticket-meta-data{
+
+            margin-top: 15px;
+
+              display: flex;
+
+              align-items: center;
+
+              gap: 5px;
+
+              margin-bottom: 15px;
+
+            .golzari-ticket-meta-data-value{
+
+              font:var(--golzari-typography-body-medium);
+
+              color : var(--golzari-netural-300);
+
+              max-width: 350px;
+
+            }
+
+            .golzari-ticket-meta-data-icon{
+
+              width: 16px;
+
+              height: 16px;
+
+              svg{
+
+                width: 100%;
+
+                height: 100%;
+
+              }
+
+            }
+
+          }
+
+
+        }
+
+
+        .golzari-cart-item-quantity-input {
+
+          width: 90px;
+
+          height: 40px;
+
+          display: flex;
+
+          align-items: center;
+
+          justify-content: center;
+
+          border:1px solid var(--golzari-netural-300);
+
+          border-radius: 8px;
+
+          margin-right: auto;
+
+          .golzari-cart-item-quantity-input-button{
+
+            cursor: pointer;
+
+            .golzari-cart-item-quantity-input-button-icon{
+
+              width: 16px;
+
+              height: 16px;
+
+              svg{
+
+                width: 100%;
+
+                height: 100%;
+
+              }
+
+            }
+
+
+            .remove-cart-item-icon-holder{
+
+              display: none;
+
+            }
+
+
+
+
+          }
+
+          .golzari-cart-item-quantity-input-value {
+
+            appearance: none;
+
+            background: transparent;
+
+            border: none;
+
+            text-align: center;
+
+            padding: 0;
+
+            width: 40px;
+
+            font:var(--golzari-typography-body-medium);
+
+            color: var(--golzari-netural-600);
+
+
+
+          }
+
+
+          &.single-quantity{
+
+            .remove-cart-item-icon-holder{
+
+              display: flex !important;
+
+              align-items: center;
+
+              justify-content: center;
+
+
+            }
+
+            .golzari-cart-item-quantity-input-button.decrease .golzari-cart-item-quantity-input-button-icon{
+
+              display: none;
+
+            }
+
+          }
+
+
+        }
+
+      }
+
+
+
+
+
+      &.doing-ajax{
+
+        pointer-events: none;
+
+        opacity: 0.3;
+
+      }
+
+    }
+
+
+    .golzari-cart-sidebar{
+
+      min-width: 400px;
+
+      margin-right: auto;
+
+      .golzari-cart-total-data{
+
+        margin-bottom: 15px;
+
+        border : 1px solid var(--golzari-netural-200);
+
+        border-radius: 12px;
+
+        padding:24px;
+
+
+        &.doing-ajax{
+
+          opacity: 0.3;
+
+          pointer-events: none;
+
+        }
+
+
+        .golzari-cart-total-item {
+
+          height: 50px;
+
+          display: flex;
+
+          align-items: center;
+
+
+          &.total-cost{
+
+            border-top : 1px dashed var(--golzari-netural-200);
+
+            .golzari-cart-total-item-value{
+
+              color : var(--golzari-green);
+
+            }
+
+          }
+
+          .golzari-cart-total-item-value{
+
+            margin-right: auto;
+
+           .golzari-cart-total-item-value-placeholder {
+
+              width: 40px;
+
+              display: none;
+
+            }
+
+
+          }
+
+        }
+
+      }
+
+
+
+
+
+
+      .golzari-coupon-code-container{
+
+        border: 1px solid var(--golzari-netural-200);
+
+        position: relative;
+
+        border-radius: 12px;
+
+        height: 70px;
+
+        display: flex;
+
+        align-items: center;
+
+        margin-bottom: 15px;
+
+        .golzari-coupon-code-input{
+
+          border : none;
+
+          height: 100%;
+
+          width: 80%;
+
+          max-width: 270px;
+
+          padding: 0;
+
+          margin-right: 24px;
+
+          &:focus{
+
+            outline: none;
+
+          }
+
+        }
+
+        .golzari-coupon-code-submit {
+
+          width: 92px;
+
+          height: 44px;
+
+          margin-right: auto;
+
+          margin-left: 20px;
+
+          border-radius: 12px;
+
+          border: none;
+
+          background: var(--golzari-netural-100);
+
+          color: var(--golzari-netural-300);
+
+          font : var(--golzari-typography-button-medium);
+
+          position: relative;
+
+          .golzari-coupon-code-loading-svg{
+
+            display: none;
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%,-50%);
+
+            width: 40px;
+
+            svg{
+
+              circle {
+
+                fill : var(--golzari-netural-300);
+
+                stroke: var(--golzari-netural-300);
+
+              }
+
+            }
+
+          }
+
+          &.doing-ajax{
+
+            pointer-events: none;
+
+            font-size: 0;
+
+            .golzari-coupon-code-loading-svg{
+
+              display: flex;
+
+              align-items: center;
+
+              justify-content: center;
+
+            }
+
+          }
+
+
+
+        }
+
+
+      }
+
+
+
+      .golzari-applied-coupons{
+
+        border: 1px solid var(--golzari-netural-200);
+
+        position: relative;
+
+        border-radius: 12px;
+
+        display: flex;
+
+        align-items: center;
+
+        margin-bottom: 15px;
+
+        padding: 16px;
+
+        .golzari-applied-coupons-item {
+
+          width: 100%;
+
+          display: flex;
+
+          align-items: center;
+
+          .golzari-applied-coupons-item-description {
+
+            display: flex;
+
+            flex-direction: column;
+
+            margin-right: 10px;
+
+            .golzari-applied-coupons-item-description-content{
+
+              color: var(--golzari-green);
+
+              font:var(--golzari-typography-button-small);
+
+            }
+
+            .golzari-applied-coupons-item-description-coupon-code{
+
+              font:var(--golzari-typography-body-large);
+
+              color: var(--golzari-netural-300);
+
+            }
+
+          }
+
+          .golzari-applied-coupons-item-remove{
+
+            margin-right: auto;
+
+            cursor: pointer;
+
+          }
+
+        }
+
+
+      }
+
+
+
+      .golzari-procceed-checkout-button {
+
+        width: 100%;
+
+        height: 50px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        border-radius: 12px;
+
+        cursor: pointer;
+
+        background: var(--golzari-accent-color);
+
+        color: var(--golzari-netural-50);
+
+        font: var(--golzari-typography-button-medium);
+
+        text-decoration: none;
+
+      }
+
+    }
+
+
+
+  }
+
+
+  .golzari-empty-cart-notice {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    width: 100%;
+
+    .golzari-empty-cart-notice-icon{
+
+
+      width: 100px;
+
+      height: 100px;
+
+      svg{
+
+        width: 100%;
+
+        height: 100%;
+
+        path{
+
+          stroke : var(--golzari-accent-color);
+
+        }
+
+        ellipse{
+
+          fill: var(--golzari-accent-color);
+
+        }
+
+      }
+
+    }
+
+
+    .golzari-empty-cart-notice-title h1{
+
+      text-align: center;
+
+      font:var(--golzari-typography-h1);
+
+      color:var(--golzari-netural-600);
+
+    }
+
+
+    .golzari-empty-cart-notice-button a{
+
+      text-decoration: none;
+
+      font:var(--golzari-typography-button-medium);
+
+      color: var(--golzari-netural-50);
+
+      background: var(--golzari-accent-color);
+
+      border-radius: 12px;
+
+      padding: 10px 20px;
+
+
+
+    }
+
+
+
+  }
+
+
+
+
+  @include mixins.mobileResponsive{
+
+
+    .golzari-cart-title{
+
+      text-align: center;
+
+    }
+
+
+    .golzari-cart-content{
+
+
+
+        display: flex;
+
+        flex-direction: column;
+
+        .golzari-cart-items{
+
+          min-width: 340px;
+
+          width: 340px;
+
+          margin:20px auto;
+
+          .golzari-cart-item{
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+
+            .golzari-cart-item-meta-data{
+
+              text-align: center;
+
+            }
+
+            .golzari-cart-item-quantity-input{
+
+              margin-right: 0;
+
+            }
+
+
+          }
+
+        }
+
+
+
+      .golzari-cart-sidebar{
+
+
+        min-width: 340px;
+
+        width: 340px;
+
+        margin:0 auto;
+
+
+        .golzari-cart-total-data{
+
+          padding: 15px;
+
+
+        }
+
+      }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  @include mixins.tabletResponsive{
+
+
+    .golzari-cart-title{
+
+      text-align: center;
+
+    }
+
+
+    .golzari-cart-content{
+
+
+
+      display: flex;
+
+      flex-direction: column;
+
+      .golzari-cart-items{
+
+        min-width: 500px;
+
+        width: 500px;
+
+        margin:20px auto;
+
+        .golzari-cart-item{
+
+          flex-direction: column;
+
+          justify-content: center;
+
+          align-items: center;
+
+
+          .golzari-cart-item-meta-data{
+
+            text-align: center;
+
+          }
+
+          .golzari-cart-item-quantity-input{
+
+            margin-right: 0;
+
+          }
+
+
+        }
+
+      }
+
+
+
+      .golzari-cart-sidebar{
+
+        font-size: 14px !important;
+
+
+        min-width: 500px;
+
+        width: 500px;
+
+        margin:0 auto;
+
+
+        .golzari-cart-total-data{
+
+          padding: 15px;
+
+
+        }
+
+      }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+  }
+
+
+
+
+  @include mixins.laptopResponsive{
+
+    max-width: 90%;
+
+    margin: 0 auto;
+
+    .golzari-cart-title{
+
+      text-align: center;
+
+    }
+
+
+    .golzari-cart-content{
+
+      grid-template-columns: 2fr 1fr;
+
+      gap: 10px;
+
+      .golzari-cart-items{
+
+        min-width: 100%;
+
+        width: 100%;
+
+        margin:0;
+
+      }
+
+
+
+      .golzari-cart-sidebar{
+
+
+        min-width: 100%;
+
+        width: 100%;
+
+        margin:0 auto;
+
+
+        .golzari-cart-total-data{
+
+          padding: 15px;
+
+
+        }
+
+      }
+
+
+    }
+
+
+
+
+
+  }
+
+
+
+
+
+
+}
